@@ -1,9 +1,11 @@
-import { Center, Text } from "@gluestack-ui/themed";
+import { Group } from "@components/Group";
+import { VStack } from "@gluestack-ui/themed";
 
 export function Home() {
   return (
-    <Center flex={1}>
-      <Text color="$white">Home</Text>
-    </Center>
+    <VStack flex={1}>
+      <Home />
+      <Group name="Costas" isActive={false} />
+    </VStack>
   );
 }
